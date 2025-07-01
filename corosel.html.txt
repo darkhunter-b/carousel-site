@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses Carousel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    h2 {
+      font-size: 32px;
+      width: 767px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel {
+      display: flex;
+      gap: 20px;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .carousel img {
+      width: 220.37px;
+      height: 311.84px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Double the image set to create a loop illusion */
+    .carousel-wrapper {
+      display: flex;
+      width: max-content;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>THE BEST OF ITS KIND IN AP FOR...</h2>
+
+  <div class="carousel-container">
+    <div class="carousel carousel-wrapper" id="carousel">
+      <!-- Repeat images for seamless loop -->
+      <img src="https://via.placeholder.com/220x311" alt="Course 1">
+      <img src="https://via.placeholder.com/220x311" alt="Course 2">
+      <img src="https://via.placeholder.com/220x311" alt="Course 3">
+      <img src="https://via.placeholder.com/220x311" alt="Course 4">
+      <img src="https://via.placeholder.com/220x311" alt="Course 5">
+      <img src="https://via.placeholder.com/220x311" alt="Course 6">
+      <img src="https://via.placeholder.com/220x311" alt="Course 7">
+      <img src="https://via.placeholder.com/220x311" alt="Course 8">
+      
+      <!-- Duplicate for looping -->
+      <img src="https://via.placeholder.com/220x311" alt="Course 1">
+      <img src="https://via.placeholder.com/220x311" alt="Course 2">
+      <img src="https://via.placeholder.com/220x311" alt="Course 3">
+      <img src="https://via.placeholder.com/220x311" alt="Course 4">
+      <img src="https://via.placeholder.com/220x311" alt="Course 5">
+      <img src="https://via.placeholder.com/220x311" alt="Course 6">
+      <img src="https://via.placeholder.com/220x311" alt="Course 7">
+      <img src="https://via.placeholder.com/220x311" alt="Course 8">
+    </div>
+  </div>
+
+</body>
+</html>
